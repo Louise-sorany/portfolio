@@ -1,73 +1,70 @@
+                             
+/* Estilo base */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #d63384; /* Rosa vibrante para texto */
+  background-color: #fff0f5; /* Fundo rosa claro */
+  line-height: 1.6;
+  padding: 20px;
+  margin: 0;
 }
 
-header {
-    background:  linear-gradient(90deg, #1e3c72, #2a5298);
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Banner */
+.banner {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+/* Títulos */
+h1, h2, h3 {
+  color: #c2185b; /* Rosa escuro para títulos */
+  margin-top: 20px;
 }
 
-header p {
-    margin: 0.5rem 0 0;
+/* Parágrafos e listas */
+p, li {
+  font-size: 1rem;
 }
 
-section {
-    padding: 1rem 2rem;
-    background: #fff;
-    margin: 1rem auto;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-h2 {
-    color: #2a5298;
-}
-
-h3 {
-    color: #1e3c72;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    background: #e0e7ff;
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    border-left: 4px solid #2a5298;
-    border-radius: 4px;
-}
-
+/* Links */
 a {
-    color: #1e3c72;
-    text-decoration: none;
+  color: #e91e63;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-img{
-    display:block;
-    margin: 1rem auto;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Seções */
+section {
+  margin-bottom: 40px;
 }
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .banner {
+    height: 180px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.2rem;
+  }
+
+  section p, section li {
+    font-size: 0.95rem;
+  }
+}
+
